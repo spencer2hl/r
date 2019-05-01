@@ -1,6 +1,9 @@
 import random
-
-r = random.randint(1, 100) # 包含了1和100
+start = input('请决定随机数字范围开始值')
+end = input('请决定随机数字范围结束值')
+start = int(start)
+end = int(end)
+r = random.randint(start, end) # 包含了1和100
 count = 0
 while True:
 	count = count + 1 #count += 1 快写法
